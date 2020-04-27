@@ -6,7 +6,8 @@
     </head>
     <body>
         <div class = "container">
-            {{>header}}
+        {{>header}}
+        <div class = "main-content">
             <h4>{{description}}</h4>
             <p id="msg1"></p>
             <table class="table">
@@ -64,13 +65,14 @@
                     <td>Global New Deaths</td>
                     <td id ="globalNewDeath"></td>
                 </tr>                                                                                                                                                                                                                                                                                                                                       
-            </table>                    
+            </table>   
+        </div>                    
+        </div>
             <div class="card text-center" id = "footer">
                 <div class="card-footer text-muted">
                     Created by {{>footer}}
                 </div>
-            </div>  
-        </div>
+            </div>         
     </body>
     <script src = "/js/app2.js"></script>
 </html>
