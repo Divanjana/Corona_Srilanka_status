@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class = "container">
+            {{>header}}
+            <h4>{{description}}</h4>
+            <p id="msg1"></p>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="2" id="hosname">Local COVID-19</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>New Local Cases</td>
+                    <td id ="newLocal"></td>
+                </tr> 
+                 <tr>
+                    <td>Total Local Cases</td>
+                    <td id ="totalLocal"></td>
+                </tr> 
+                <tr>
+                    <td>Local Total Number of Individuals In Hospitals</td>
+                    <td id ="localHos"></td>
+                </tr>
+                 <tr>
+                    <td>Total Local Deaths</td>
+                    <td id ="totalLocalDeaths"></td>
+                </tr> 
+                 <tr>
+                    <td>New Local Deaths</td>
+                    <td id ="newLocalDeaths"></td>
+                </tr> 
+                 <tr>
+                    <td>Local Recovered</td>
+                    <td id ="localRec"></td>
+                </tr> 
+                 <tr>
+                    <td>Local Active Cases</td>
+                    <td id ="localActive"></td>
+                </tr> 
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="2" id="hosname">Global COVID-19</th>
+                    </tr>
+                </thead>                
+                 <tr>
+                    <td>Global New Cases</td>
+                    <td id ="globalNew"></td>
+                </tr>  
+                 <tr>
+                    <td>Global Total Cases</td>
+                    <td id ="globalTotal"></td>
+                </tr>  
+                 <tr>
+                    <td>Global Deaths</td>
+                    <td id ="globalDeath"></td>
+                </tr>  
+                 <tr>
+                    <td>Global New Deaths</td>
+                    <td id ="globalNewDeath"></td>
+                </tr>                                                                                                                                                                                                                                                                                                                                       
+            </table>                    
+            <div class="card text-center" id = "footer">
+                <div class="card-footer text-muted">
+                    Created by {{>footer}}
+                </div>
+            </div>  
+        </div>
+    </body>
+    <script src = "/js/app2.js"></script>
+</html>

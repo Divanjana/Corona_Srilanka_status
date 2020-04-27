@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "main-content">               
+                {{>header}}
+                <form>
+                    <h4>Select hospital Name</h4>
+                    <div class="row">
+                        <div class="col-4">
+                        <select id = "s1" class="form-control">
+                            <option>National Institute of Infectious Diseases</option>
+                            <option>National Hospital Sri Lanka</option>
+                            <option>TH - Ragama</option>
+                            <option>TH - Karapitiya</option>
+                            <option>TH - Anuradhapura</option>
+                            <option>TH - Kurunegala</option>
+                            <option>TH- Jaffna</option>
+                            <option>National Hospital Kandy</option>
+                            <option>TH – Batticaloa</option>
+                            <option>DGH- Gampaha</option>
+                            <option>DGH – Negombo</option>
+                            <option>TH – Rathnapura</option>
+                            <option>PGH – Badulla</option>
+                        </select>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary">Find</button>
+                        </div>
+                    </div>
+                    <br>         
+                    <p id="msg1"></p>
+                    <table hidden="ture" class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th colspan="2" id="hosname"></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Cumulative Locals</td>
+                            <td id ="loc_com"></td>
+                        </tr>
+                        <tr>
+                            <td>Cumulative Foreign</td>
+                            <td id="for_com"></td>
+                        </tr>
+                        <tr>
+                            <td>Total Cumulative People</td>
+                            <td id="total_com"></td>
+                        </tr>
+                        <tr>
+                            <td>Treatment Locals</td>
+                            <td id="loc_treat"></td>
+                        </tr>  
+                        <tr>
+                            <td>Treatment Foreign</td>
+                            <td id="for_treat"></td>
+                        </tr>  
+                        <tr>
+                            <td>Total Treatment People</td>
+                            <td id="total_treat"></td>
+                        </tr>                                                                                                          
+                    </table>
+                </form>
+            </div>
+            <div class="card text-center" id = "footer">
+                <div class="card-footer text-muted">
+                    Created by {{>footer}}
+                </div>
+            </div>            
+        </div>
+    </body>
+    <script src = "/js/app.js"></script>
+</html>
